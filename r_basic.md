@@ -33,9 +33,28 @@ $ sum(seq(3))
 $ exp(log(10))
 ```
 
-### install, library, data
+### install, library
 ```sh
 $ install.packages("dslabs")
 $ library(dslabs)
+```
+### class, name, head
+```sh
 $ class(murders)
+$ names(murders)
+$ head(murders)
+```
+
+### indexing
+```sh
+$ murders$state
+$ murders$abb
+$ murders$region
+$ murders$population
+$ murders$total
+```
+### factors
+```sh
+$ class(murders$region)
+$ levels(murders$region)
 ```
