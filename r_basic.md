@@ -32,3 +32,10 @@ $ exp(4)
 $ sum(seq(3))
 $ exp(log(10))
 ```
+
+### install, library, data
+```sh
+$ install.packages("dslabs")
+$ library(dslabs)
+$ class(murders)
+```
