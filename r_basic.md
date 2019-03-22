@@ -15,6 +15,7 @@ $ y <- 2
 $ x + y
 $ x * y
 ```
+
 ### basic function
 ```sh
 $ seq(3)
@@ -38,6 +39,7 @@ $ exp(log(10))
 $ install.packages("dslabs")
 $ library(dslabs)
 ```
+
 ### class, name, head
 ```sh
 $ class(murders)
@@ -57,4 +59,33 @@ $ murders$total
 ```sh
 $ class(murders$region)
 $ levels(murders$region)
+```
+
+### vectors
+```sh
+$ c(1,2,3,4,5)
+$ c("a", "b", "c", "d")
+```
+
+### sequence
+```sh
+$ 1:100
+$ seq(1,10,2)
+```
+
+### subset
+```sh
+$ money <- c(100, 300, 200, 400)
+$ snack <- c("ice", "choco", "candy")
+$ class(snack)
+$ names(money)
+$ names(money) <- snack
+$ money[1:3]
+```
+
+### coercion
+```sh
+$ c(1,2,3,"a")
+$ as.numeric(c(1,2,3,"a"))
+$ as.character(c(1,2,3))
 ```
