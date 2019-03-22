@@ -60,7 +60,6 @@ $ murders$total
 $ class(murders$region)
 $ levels(murders$region)
 ```
-
 ### vectors
 ```sh
 $ c(1,2,3,4,5)
@@ -89,7 +88,6 @@ $ c(1,2,3,"a")
 $ as.numeric(c(1,2,3,"a"))
 $ as.character(c(1,2,3))
 ```
-## Sorting
 
 ### sort
 ```sh
