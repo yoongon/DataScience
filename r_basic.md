@@ -109,7 +109,8 @@ $ order(test)
 $ library(dslabs)
 $ head(murders)
 $ states <- murders$state
-rank <- rank(murders$population)
+$ rank <- rank(murders$population)
+$ data.frame(names=states, rank=rank)
 ```
 
 ### which
