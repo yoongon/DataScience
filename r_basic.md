@@ -89,3 +89,33 @@ $ c(1,2,3,"a")
 $ as.numeric(c(1,2,3,"a"))
 $ as.character(c(1,2,3))
 ```
+## Sorting
+
+### sort
+```sh
+$ sort(c(4,2,3,1,9,8,7))
+```
+### rank
+```sh
+$ rank(c(13, 30, 20, 11))
+```
+
+### order
+```sh
+$ test <- c(30, 10, 20)
+$ order(test)
+```
+
+### rank (murders)
+```
+$ library(dslabs)
+$ head(murders)
+$ states <- murders$state
+rank <- rank(murders$population)
+```
+
+### which
+```sh
+$ states[which.min(murders$population)]
+$ states[which.max(murders$population)]
+```
