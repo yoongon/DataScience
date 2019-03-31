@@ -142,7 +142,7 @@ $ ind <- match(c("CA", "NY"), murders$abb)
 $ murders$state[ind]
 ```
 
-### %>%
+### %in%
 ```sh
 $ c("CA", "NY") %in% murders$abb
 $ ind <- murders$abb %in% c("CA", "NY")
@@ -153,4 +153,78 @@ $ murders$state[ind]
 ```sh
 $ ind <- murders$region == "South"
 $ murders$state[!ind]
+```
+
+### install dplyr
+```sh
+$ install.packages(“dplyr”)
+```
+
+### mutate
+```sh
+$ murders <- mutate(murders, rate = total/population)
+```
+
+### select
+```sh
+$ select(murders, state, population)
+```
+
+### filter
+```sh
+$ filter(murders, region=="West")
+```
+
+### pipe
+```sh
+$ mutate(murders, rate = total / population * 100000, rank = rank(-rate)) %>% select(state, rate, rank)
+```
+
+### plot
+```sh
+$ plot(murders$population/10^6, murders$total)
+```
+
+### hist
+```sh
+$ hist(murders$population/10^6)
+```
+
+### boxplot
+```sh
+$ boxplot(total~region, data = murders)
+```
+
+### function
+```sh
+$ sample_func <- function(x) {
+    y <- -1 * x
+    y
+}
+```
+
+### if
+```sh
+$ check <- function(x) {
+    if (x>0) {
+        print ("plus")
+    } else {
+        print ("minus")
+    }
+}
+```
+
+### ifelse
+```sh
+$ idx <- ifelse(murders$population> 10000000, TRUE, FALSE)
+$ murders$state[idx]
+```
+
+### for
+```sh
+$ n <- 100
+$ data <- vector("numeric", n)
+$ for (i in 1:n) {
+    data[i] <- i^2
+}
 ```
