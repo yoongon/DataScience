@@ -1,5 +1,7 @@
 # R Basic
-[Lecture]: https://www.youtube.com/playlist?list=PLu1f0b2x0aaskPNUuoGBidnQ7eazA1GUw
+
+### Lecture
+[Youtube] (https://www.youtube.com/playlist?list=PLu1f0b2x0aaskPNUuoGBidnQ7eazA1GUw)
 
 ### Installation
 Install guide: [DataCamp](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu)
