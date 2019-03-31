@@ -118,3 +118,14 @@ $ data.frame(names=states, rank=rank)
 $ states[which.min(murders$population)]
 $ states[which.max(murders$population)]
 ```
+
+### vector arithmetic
+```sh
+$ test <- 1:100
+$ sum(test^3)
+
+$ ind <- which.max(murders$total)
+$ murders[ind]
+
+$murders$state[which.max(murders$total/murders$population)]
+```
