@@ -127,5 +127,30 @@ $ sum(test^3)
 $ ind <- which.max(murders$total)
 $ murders[ind]
 
-$murders$state[which.max(murders$total/murders$population)]
+$ murders$state[which.max(murders$total/murders$population)]
+```
+
+### filtering
+```sh
+$ idx <- murders$region == "South"
+$ murders$state[idx]
+```
+
+### match
+```sh
+$ ind <- match(c("CA", "NY"), murders$abb)
+$ murders$state[ind]
+```
+
+### %>%
+```sh
+$ c("CA", "NY") %in% murders$abb
+$ ind <- murders$abb %in% c("CA", "NY")
+$ murders$state[ind]
+```
+
+### !
+```sh
+$ ind <- murders$region == "South"
+$ murders$state[!ind]
 ```
